@@ -31,7 +31,8 @@ let
   makeLnCommands = type: (mapAttrsToList (name: path: "ln -sf ${path} ./${type}/${name}"));
 
   # Setup spicetify
-  spicetify = "SPICETIFY_CONFIG=. ${pkgs.spicetify-cli}/spicetify";
+  spicetifyPkg = pkgs.callPackage ./spicetify.nix {};
+  spicetify = "SPICETIFY_CONFIG=. ${spicetifyPkg}/spicetify";
 
   themes = pkgs.fetchzip {
     url = https://github.com/TonyTheAce/spicetify-themes/archive/refs/tags/2.8.5.tar.gz;
