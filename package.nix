@@ -32,7 +32,7 @@ let
 
   # Setup spicetify
   spicetifyPkg = pkgs.callPackage ./spicetify.nix {};
-  spicetify = "SPICETIFY_CONFIG=. ${spicetifyPkg}/spicetify";
+  spicetify = "SPICETIFY_CONFIG=. ${spicetifyPkg}/spicetify-cli";
 
   themes = pkgs.fetchzip {
     url = https://github.com/TonyTheAce/spicetify-themes/archive/refs/tags/2.9.9.tar.gz;
