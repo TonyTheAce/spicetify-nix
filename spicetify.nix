@@ -1,12 +1,12 @@
 { stdenv, pkgs }:
 
 stdenv.mkDerivation rec {
-  name = "spicetify-2.8.3";
+  name = "spicetify-2.9.9";
 
   src = pkgs.fetchurl {
-    name = "spicetify-2.8.5-linux-amd64.tar.gz";
-    url = https://github.com/spicetify/spicetify-cli/releases/download/v2.9.4/spicetify-2.9.4-linux-amd64.tar.gz;
-    sha256 = "0py8mhnwd6z1k373p43w5p07amnf40274jhswv09pp9ijl8rgff9";
+    name = "spicetify-2.9.9-linux-amd64.tar.gz";
+    url = https://github.com/spicetify/spicetify-cli/releases/download/v2.9.9/spicetify-2.9.9-linux-amd64.tar.gz;
+    sha256 = "0vasp8cyzzdag0zil6b2ix99lbzskny4nhz7vq5bx8x2bb7qyxc6";
   };
 
   sourceRoot = ".";
