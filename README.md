@@ -1,4 +1,8 @@
-# Spicetify-Nix
+# Spicetify-Nix (Deprecated)
+
+> This repo does not work anymore. A flake based reimplementation is in the works.
+
+--- 
 
 Modifies Spotify using [spicetify-cli](https://github.com/khanhas/spicetify-cli).
 
